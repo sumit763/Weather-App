@@ -93,3 +93,61 @@ body{
     margin-top: 10px;
     display: none;
 }
+/* responsive*/
+@media screen and (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+    .card {
+      width: 98%;
+      max-width: none; /* Remove max-width constraint */
+      margin: 50px auto 0; /* Adjust margin */
+      padding: 20px;
+    }
+  
+    .search {
+      justify-content: flex-start; /* Keep button at the end */
+    }
+  
+    .search input {
+      width: calc(100% - 70px); /* Adjust input width to accommodate button */
+      margin-right: 10px; /* Add margin between input and button */
+      z-index: 1; /* Ensure input remains above button */
+    }
+  
+    .search button {
+      width: 50px; /* Adjust button width */
+      height: 50px; /* Adjust button height */
+      z-index: 0; /* Ensure button remains below input */
+    }
+  
+    .search button img {
+      width: 24px; /* Adjust image width */
+    }
+  
+    .weather h1 {
+      font-size: 60px;
+    }
+  
+    .weather h2 {
+      font-size: 35px;
+    }
+  
+    .weather-icon {
+      width: 120px;
+    }
+  
+    .details {
+      flex-direction: column;
+      margin-top: 30px; /* Adjust margin */
+    }
+  
+    .col {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
